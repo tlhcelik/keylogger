@@ -17,7 +17,7 @@ class OsDetect:
         obj = OsDetect()
         print obj.get_os_for_file_name
         output in linux -> /home/malc
-        output in windows -> C:\Document End Settings \malc\
+        output in windows -> C:\Document and Settings \malc\
 
         :return: str
         """
@@ -25,6 +25,6 @@ class OsDetect:
             self.FILE = '/home/{0}/'.format(self.UNAME)
 
         if os_name == 'nt':
-            self.FILE = r"C:\Document End Settings\{0}".format(self.UNAME)
+            self.FILE = r"C:\Document and Settings\{0}".format(self.UNAME)
 
         return self.FILE
